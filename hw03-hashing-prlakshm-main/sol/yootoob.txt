@@ -1,0 +1,35 @@
+Task 2-B:
+1.
+public List<Video> getSearchResults(Hashtable<String,
+List<Video>> videoTable, String category) {
+    return videoTable.get(category);
+}
+
+In this example, the input for category would be "outer space."
+
+2.
+public List<Video> getRelatedVideoRecommendations(Hashtable
+<String,List<Video>> videoTable, String category) {
+    return videoTable.get(category);
+}
+
+In this example, the input for category would be "comedy."
+
+Task 2-C:
+For both code parts in Task 2-B, the same line of code was used to retreive the
+list of videos from the inputted category. This means that whether the user wants a
+search result or recommended video, yootoob would return the same list of values.
+This is a design flaw, because the options are not specially curated. The user will get
+bored and annoyed that yootoob doesn't give them different options.
+
+Task 2-E:
+If you use hashmaps, you are keeping your users in a filter bubble and everyone
+will get the same results as each other. This means the same popular videos at the top will
+get watched and some videos are rarely seen. A way to fix this is by randomizing the list of
+videos that are outputted by the search, so that not just the popular videos show up at the top
+each time. This way, videos be smaller creators can still get a chance. Another recommendation
+is to have sub-categories. This way, filters can be more specific. When you are searching for a
+general topic like "comedy," you can get different videos from each subcategory, like
+"romantic comedy," "stand-up comedy," or "dark humor." You can use AI to find out which combination
+of subcategories to output for each user, so that everyone gets different results. Video curations can
+be chosen based the past videos seen by a user.
